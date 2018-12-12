@@ -5,10 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from urllib.request import urlopen
 import time
 
-driver = webdriver.Chrome("Desktop/chromedriver.exe") #abre o chrome
-driver2 = webdriver.Chrome("Desktop/chromedriver.exe") #abre o chrome
+driver = webdriver.Chrome("C:\\Users\\sabri\\Desktop\\chromedriver.exe") #abre o chrome
+driver2 = webdriver.Chrome("C:\\Users\\sabri\\Desktop\\chromedriver.exe") #abre o chrome
 driver.get(s)
-import time
+input("digite qualquer coisa após logar e tecle enter")
+
 
 
 def enderecos():
@@ -47,6 +48,7 @@ def candidatura(end):
         blue.click()
     except:
         _=""
+
 
 driver2.get("http://oportunidades.pucsp.br/vagas-trabalho-emprego/region-Sao-Paulo/")
 #time.sleep(10)
